@@ -2,7 +2,7 @@
 
 ![Koha](https://bibliolabtech.com/_next/image?url=%2Fimages%2Fplatforms%2F2.png&w=640&q=75)
 
-##Indice
+## Indice
 1. Introducción y Objetivos
 2. Diseño de la Infraestructura
 3. Instalación y Configuración del Entorno Virtual
