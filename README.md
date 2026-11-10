@@ -3,8 +3,8 @@
 ![Koha](https://bibliolabtech.com/_next/image?url=%2Fimages%2Fplatforms%2F2.png&w=640&q=75)
 
 ## Indice
-1. Introducción y Objetivos
-2. Diseño de la Infraestructura
+1. [Introducción y Objetivos](IntroduccionyObjetivos)
+2. [Diseño de la Infraestructura](diseño.md)
 3. Instalación y Configuración del Entorno Virtual
 4. Instalación y Configuración de los Servicios de Red
 5. Koha: Puesta a Punto
