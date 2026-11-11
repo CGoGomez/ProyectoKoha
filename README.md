@@ -5,8 +5,8 @@
 ## Indice
 1. [Introducción y Objetivos](IntroduccionyObjetivos)
 2. [Diseño de la Infraestructura](diseño.md)
-3. Instalación y Configuración del Entorno Virtual
-4. Instalación y Configuración de los Servicios de Red
+3. [Instalación y Configuración del Entorno Virtual](entorno.md)
+4. [Instalación y Configuración de los Servicios de Red](red.md)
 5. Koha: Puesta a Punto
 6. Administración y Gestión de Usuarios
 7. Seguridad y Back-Ups
