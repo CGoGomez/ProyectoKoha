@@ -17,4 +17,17 @@ Ya teniendo esto configurado, lo importante empieza a partir de aquí, ir poco a
 koha-create  - -create-db nombre
 ```
 
-En este caso lo llamaremos igual al nombre que pusimos en /etc/hosts pero no es necesario que los nombres coincidan en absoluto; uno es el nombre con el cual accedemos, el otro es el nombre interno que tiene la base de datos.
+En este caso lo llamaremos igual al nombre que pusimos en /etc/hosts pero no es necesario que los nombres coincidan en absoluto; uno es el nombre con el cual accedemos, el otro es el nombre interno que se lista
+en Koha.
+
+![](/img/base.PNG)
+
+Cuando se lanza el comando, koha se encarga de crear lo necesario, primero crea los sitios en la carpeta “sites” encontrada en “/etc/koha/sites” y aplica el nombre que nosotros le hayamos indicado, también lo muestra en “/etc/apache/sites-enabled” donde además del default, aparece también una nueva instancia con el mismo nombre. Todas las comprobaciones pueden hacerse por medio de los siguientes comandos:
+```bash
+koha-list
+ls -l /etc/koha/sites/nombre
+ls -l /etc/apache2/sites-enabled
+```
+![](/img/Lists.PNG)
+
+Pero ojo, esto no significa que automáticamente funcionen por arte de magia, hay un archivo que nos concierne configurar primero tras haber hecho la creación; debemos ir a un archivo llamado “koha-sites.conf” ubicado directamente en la carpeta de koha, previo a “sites” o a la correspondiente de nuestro nombre.
