@@ -47,4 +47,4 @@ de acceso de la interfaz administrativa. ¿Por qué en ese orden? Pues porque a 
 que en la última línea previo a cerrar el VirtualHost, se puede ver el "ErrorLog" que es la ubicación de a donde se van a enviar los errores, en esa dirección se puede distinguir que pone "opac-error.log" y en el
 segundo es "intranet-error.log", aquí es donde indicaremos la otra dirección, la correspondiente a la interfaz administrativa.
 
-![](/img/Virtual.png)
+![](/img/Virtual.PNG)
