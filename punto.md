@@ -31,3 +31,20 @@ ls -l /etc/apache2/sites-enabled
 ![](/img/Lists.PNG)
 
 Pero ojo, esto no significa que automáticamente funcionen por arte de magia, hay un archivo que nos concierne configurar primero tras haber hecho la creación; debemos ir a un archivo llamado “koha-sites.conf” ubicado directamente en la carpeta de koha, previo a “sites” o a la correspondiente de nuestro nombre.
+
+En “/etc/koha/koha-sites.conf” se encuentra nuestro siguiente paso, debemos modificar un par de líneas en concreto, la primera bajo la etiqueta domain; la primera sin comentar tras abrir el archivo e INTRASUFFIX (señalada en rojo). Estos campos, que son los únicos a modificar, describen expresamente el dominio que usamos para ambas direcciones, el segundo es referente a la página de la interfaz administrativa; no va con terminación, se da a entender que es la misma que el "Domain"
+
+![](/img/Conf.PNG)
+
+El trabajo aún está lejos de estar terminado, aún debemos arreglar los enlaces del host para que distinga entre una dirección y la otra a pesar de tener exactamente la misma IP. Por eso vamos a editar otro archivo de
+configuración, en el directorio "/etc/apache2/sites-available" encontraremos un archivo de configuración que tiene el nombre que indicamos previamente, en nuestro caso lleva el nombre "roundabound.conf"
+```bash
+nano /etc/apache2/sites-available/roundabound.conf
+```
+
+Al entrar en el archivo nos interesa cambiar el nombre indicado en "SeverName" (indicado en rojo en ambos apartados de VirtualHost), para el primero vamos a indicar el nombre de acceso al OPAC y en el de abajo el
+de acceso de la interfaz administrativa. ¿Por qué en ese orden? Pues porque a la hora de su creación, Koha automáticamente creó este archivo, con los dos hosts virtuales preparados, en el primero se puede observar
+que en la última línea previo a cerrar el VirtualHost, se puede ver el "ErrorLog" que es la ubicación de a donde se van a enviar los errores, en esa dirección se puede distinguir que pone "opac-error.log" y en el
+segundo es "intranet-error.log", aquí es donde indicaremos la otra dirección, la correspondiente a la interfaz administrativa.
+
+![](/img/Virtual.png)
