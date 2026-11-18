@@ -14,7 +14,7 @@ Apache es instalado por defecto por ser el servicio web más usado, por ese moti
 Ya teniendo esto configurado, lo importante empieza a partir de aquí, ir poco a poco a configurar lo importante en Koha. Para el comienzo, se recomienda crear la instancia de la base de datos con el siguiente comando:
 
 ```bash
-koha-create  - -create-db nombre
+koha-create  --create-db nombre
 ```
 
 En este caso lo llamaremos igual al nombre que pusimos en /etc/hosts pero no es necesario que los nombres coincidan en absoluto; uno es el nombre con el cual accedemos, el otro es el nombre interno que se lista
@@ -48,3 +48,16 @@ que en la última línea previo a cerrar el VirtualHost, se puede ver el "ErrorL
 segundo es "intranet-error.log", aquí es donde indicaremos la otra dirección, la correspondiente a la interfaz administrativa.
 
 ![](/img/Virtual.PNG)
+
+Cuando tengamos los hosts preparados, recargamos apache con "systemctl reload apache2.service" y lanzamos los 2 siguientes comandos:
+
+```bash
+curl -I -H "Host: roundabound.biblioteca.es" http://127.0.0.1/
+curl -I -H "Host: roundabound-administracion.biblioteca.es" http://127.0.0.1/
+```
+
+Nos debería resolver los siguientes resultados:
+
+![](/img/curl.PNG)
+
+Sin embargo, que esto responda no significa que podamos acceder ya a las versiones web; puede darse un caso en el cual Koha reconozca que las páginas están en un estado de mantenimiento, si lanzamos el comando ' curl -v http://localhost -H "Host: roundabound.biblioteca.es" ' (y el mismo comando, pero la interfaz administrativa) encontraremos un desglose del host, una de las líneas dice **location** y puede indicar **/cgi/koha/maintenance.pl** y es posible que se haya considerado que estén ambas aquí. Adicionalmente puede haber otro problema, la base de datos puede no existir. Muchas migajas a tocar... lo sé, pero es lo que hay. Vamos a ir poco a poco.
