@@ -1,5 +1,8 @@
 # Koha: Puesta a Punto
 
+## Aviso: Debido a problemas irreversibles de la instalación y problemas constantes, este punto será re-hecho desde cero. Sin embargo se mantendrá activo, pues también dio a relucir algunos problemas de Koha
+a la hora de su instalación. Más a fondo de sus problemas en el punto de Conclusiones y Posibles mejoras.
+
 ¿Koha ha terminado de instalarse? ¡Bien! Ahora podemos empezar a configurar poco a poco, hay mucha migaja que escudriñar. 
 Empezamos con lo más sencillo, Apache, sencillo de instalar, debería de estar en la versión más reciente cuando hicimos el update previamente. 
 ¿Por qué? Pues mira, porque al ejecutar la instalación de Koha tras la parafernalia previa de comandos, Apache es un servicio necesario para que funcione, 
