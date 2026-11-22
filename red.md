@@ -41,4 +41,4 @@ sudo apt install koha-common
 ¿Por qué hacerlo ahora? Pues porque aún no estamos directamente trabajando con Koha, estamos instalándolo; en el siguiente punto veremos que archivos tocar, que otras comprobaciones necesitamos para que funcione, es decir
 vamos a trabajar en su **puesta a punto**.
 
-[Instalación y Preparación del Entorno Virtual](entorno.md)|[Inicio](README.md)|[Koha: Puesta a punto](punto.md)
+[Instalación y Preparación del Entorno Virtual](entorno.md)|[Inicio](README.md)|[Koha: Puesta a punto](puesta.md)
