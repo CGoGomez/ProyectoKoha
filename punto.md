@@ -1,7 +1,9 @@
 # Koha: Puesta a Punto
 
 ## Aviso: Debido a problemas irreversibles de la instalación y problemas constantes, este punto será re-hecho desde cero. Sin embargo se mantendrá activo, pues también dio a relucir algunos problemas de Koha
-a la hora de su instalación. Más a fondo de sus problemas en el punto de Conclusiones y Posibles mejoras.
+a la hora de su instalación.
+
+### *Para ver la versión anterior de este archivo, que terminó en desastre, haga click [aquí](puesta.md)*
 
 ¿Koha ha terminado de instalarse? ¡Bien! Ahora podemos empezar a configurar poco a poco, hay mucha migaja que escudriñar. 
 Empezamos con lo más sencillo, Apache, sencillo de instalar, debería de estar en la versión más reciente cuando hicimos el update previamente. 
@@ -64,3 +66,6 @@ Nos debería resolver los siguientes resultados:
 ![](/img/curl.PNG)
 
 Sin embargo, que esto responda no significa que podamos acceder ya a las versiones web; puede darse un caso en el cual Koha reconozca que las páginas están en un estado de mantenimiento, si lanzamos el comando ' curl -v http://localhost -H "Host: roundabound.biblioteca.es" ' (y el mismo comando, pero la interfaz administrativa) encontraremos un desglose del host, una de las líneas dice **location** y puede indicar **/cgi/koha/maintenance.pl** y es posible que se haya considerado que estén ambas aquí. Adicionalmente puede haber otro problema, la base de datos puede no existir. Muchas migajas a tocar... lo sé, pero es lo que hay. Vamos a ir poco a poco.
+
+
+[Inicio](README.md)
