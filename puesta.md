@@ -48,6 +48,11 @@ en la barra superior del navegador (por supuesto, cambia el nombre por el de la 
 
 ![](/img/Installer.PNG)
 
-Este archivo te muestra la versión actual de Koha; podemos acceder con un usuario y contraseña, por defecto son *koha_kohadev* para el usuario y *password* para la contraseña (Muy seguro, evidentemente).
+Este archivo te muestra la versión actual de Koha; podemos acceder con un usuario y contraseña, por defecto, en teoría, deberían ser *koha_kohadev* para el usuario y *password* para la contraseña (Muy seguro, evidentemente). Pero en nuestro caso tiene otro nombre, para nosotros es **koha-roundabound** y la contraseña es un galimatías de texto, que no está encriptado, sólo está elegida de forma completamente aleatoria. Si las credenciales son correctas, y
+es muy probable que lo sean (puedes comprobarlo con el comando ***koha-passwd <nombre>***) podremos acceder al instalador web y podremos configurarlo; aunque es muy probable que no tengamos que tocar nada, porque reconocerá lo que tengamos instalado en nuestra máquina virtual.
+
+![](/img/Language.PNG)
+
+Y una vez terminemos esta parte, aunque no hayamos terminado la instalación; empezará la configuración de la biblioteca en sí y en parte de los usuarios. Esa es nuestra próxima parada.
 
 [Instalación y Configuración de los Servicios de Red](red.md)|[Inicio](README.md)
