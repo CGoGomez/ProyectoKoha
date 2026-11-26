@@ -10,6 +10,6 @@ Para continuar, deberemos terminar de realizar la instalación de Koha, este pas
 a la interfaz administrativa con una ventana de Login. En este cuadro es donde introducimos las credenciales de nuestro usuario administrador, recuerda que la contraseña debía tener
 ciertos parámetros a la hora de adjudicarla; al introducirla correctamente al fin tendremos acceso a la interfaz administrativa (y al OPAC).
 
-![](/img/Admin.PNG)
+![](/img/Log.PNG)
 
 ![](/img/AdministratorPage.PNG)
