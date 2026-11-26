@@ -53,6 +53,16 @@ es muy probable que lo sean (puedes comprobarlo con el comando ***koha-passwd <n
 
 ![](/img/Language.PNG)
 
+![](/img/perl.PNG)
+
+![](/img/Language.PNG)
+
+![](/img/database.PNG)
+
+![](/img/database2.PNG)
+
+![](/img/Default.PNG)
+
 Y una vez terminemos esta parte, aunque no hayamos terminado la instalación; empezará la configuración de la biblioteca en sí y en parte de los usuarios. Esa es nuestra próxima parada.
 
-[Instalación y Configuración de los Servicios de Red](red.md)|[Inicio](README.md)
+[Instalación y Configuración de los Servicios de Red](red.md)|[Inicio](README.md)|[Administración y Gestión de Usuarios](usuarios.md)
