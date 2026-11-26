@@ -7,7 +7,7 @@
 2. [Diseño de la Infraestructura](diseño.md)
 3. [Instalación y Configuración del Entorno Virtual](entorno.md)
 4. [Instalación y Configuración de los Servicios de Red](red.md)
-5. Koha: Puesta a Punto
+5. [Koha: Puesta a Punto](puesta.md)
 6. Administración y Gestión de Usuarios
 7. Seguridad y Back-Ups
 8. Pruebas de Funcionamiento
